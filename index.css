@@ -1,0 +1,333 @@
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; background-color: #f2eeee;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* header */
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(to bottom,transparent 55%, #1F100B),url(assets/images/food1.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+h3{
+    font: 32px/1.1 "Raleway", sans-serif;
+}
+.content h2 {
+	text-align: center;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 130px;
+}
+.content h2 span {
+	-webkit-text-fill-color: transparent;
+}
+@media (max-width:991px){
+	.content h2 {
+		font-size: 50px;
+	}
+}
+
+/* main  */
+
+.icon {
+    border: 1px solid #A0592F;
+	text-align: center;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    margin: 0 auto 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.icon i, .roll-icon-box .content h3 a:hover {
+    color: #A0592F;
+	font-size: 26px;
+}
+
+.roll-icon-box .content {
+    overflow: hidden;
+}
+
+
+.Mainstage {
+    padding: 50px 0 100px;
+}
+
+.Main-content {
+    padding-top: 50px;
+}
+
+.Main-content .col-sm-6 {
+    padding: 0;
+}
+
+.Main-txt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.single-Main {
+    position: relative;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+.single-Main.Main-no-border {
+    border-right: transparent;
+}
+
+.single-Main-overlay {
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: #bb8c23;
+    background: -moz-linear-gradient(left, #bb8c23 0%, #ffae00 100%);
+    background: -webkit-linear-gradient(left, #bb8c23 0%, #ffae00 100%);
+    background: linear-gradient(to right, #bb8c23 0%, #ffae00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d92cf9', endColorstr='#ffae00', GradientType=1);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.single-Main:hover .Main-icon-name, .single-Main:hover .Main-txt a > i {
+    color: #fff;
+}
+
+.single-Main:hover .Main-border {
+    border: transparent;
+}
+
+/* overlay */
+
+.overlay-intersection{
+	background-repeat: no-repeat;
+	background-image: url(assets/images/food2.jpg);
+    padding: 100px 120.5px;
+    background-position: -140px;
+    margin-left: 0px;
+}
+
+.overlay {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+/* info */
+
+.info{
+	padding: 50px 0 100px;
+}
+
+.info u {
+	color: #A0592F;
+	font-weight: bold;
+}
+
+.infoContent{
+    padding-top: 50px;
+}
+
+.infoContent .col-sm-6 {
+    padding: 0;
+}
+
+.INFO-txt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* footer */
+
+.footer {
+    background-color: rgba(236, 236, 236, 0.626);
+    width: 100%;
+    text-align: left;
+    font-family: 'segoe ui';
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer .footer-start,
+.footer .footer-center,
+.footer .footer-end {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer .footer-start {
+    width: 33%;
+    padding-right: 15px;
+}
+
+.footer .about {
+    line-height: 20px;
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .icons {
+    margin-top: 25px;
+}
+
+.footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #A0592F;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-center {
+    width: 30%;
+}
+
+.footer .footer-center i {
+    background-color: #A0592F;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: black;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: #A0592F;
+    text-decoration: none;
+}
+
+.footer .footer-end {
+    width: 35%;
+}
+
+.footer h2 {
+    color: black;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer h2 span {
+    color: #A0592F;
+}
+
+.footer .menu {
+    color: black;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer .menu a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .menu a:hover {
+    color: #A0592F;
+}
+
+.footer .name {
+    color: #A0592F;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media (max-width: 948px) {
+    .footer {
+        font-size: 14px;
+    }
+
+    .footer .footer-start,
+    .footer .footer-center,
+    .footer .footer-end {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0;
+    }
+}
